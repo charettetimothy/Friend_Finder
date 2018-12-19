@@ -1,0 +1,23 @@
+{
+  "name": "friend_finder",
+  "version": "1.0.0",
+  "description": "This is a \"FriendFinder\" application -- basically a dating app. This full-stack site will take in results from a users' survey, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charettetimothy/Friend_Finder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charettetimothy/Friend_Finder/issues"
+  },
+  "homepage": "https://github.com/charettetimothy/Friend_Finder#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
