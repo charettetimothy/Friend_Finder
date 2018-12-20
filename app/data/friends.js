@@ -1,25 +1,58 @@
-// ===============================================================================
 // DATA
 // Below data will hold all of our users data.
 // Initially we just set it equal to a "dummy" user.
 // But you could have it be an empty array as well.
-var userData = [
-    {
-      customerName: "Ahmed",
-      image: "#",
-      compatibilityID: 5,
-    },
-    {
-      customerName: "Abid",
-      image: "#",
-      compatibilityID: 8,
-    },
-    {
-      customerName: "Tim",
-      image: "#",
-      compatibilityID: 7,
-    }
-  ];
+var userData = [{
+    name: "Ahmed",
+    photo: "#",
+    id: 22,
+  },
+  {
+    name: "Abid",
+    photo: "#",
+    id: 2,
+  },
+  {
+    name: "Tim",
+    photo: "#",
+    id: 3,
+  },
+  {
+    name: "Jim",
+    photo: "#",
+    id: 4,
+  },
+  {
+    name: "Bob",
+    photo: "#",
+    id: 5,
+  },
+  {
+    name: "Larry",
+    photo: "#",
+    id: 6,
+  },
+  {
+    name: "Mo",
+    photo: "#",
+    id: 7,
+  },
+  {
+    name: "Curley",
+    photo: "#",
+    id: 8,
+  },
+  {
+    name: "Harry",
+    photo: "#",
+    id: 9,
+  },
+  {
+    name: "Jerry",
+    photo: "#",
+    id: 10,
+  }
+];
 
-  // Note how we export the array. This makes it accessible to other files using require.
-  module.exports = userData;
+// Note how we export the array. This makes it accessible to other files using require.
+module.exports = userData;
