@@ -160,7 +160,7 @@
     <hr>
     <footer class="footer">
       <div class="container">
-        <p><a href="../data/friends.js">API Friends List</a> | <a href="https://github.com/charettetimothy/Friend_Finder">GitHub Repo</a></p>
+        <p><a href="/data/friends">API Friends List</a> | <a href="https://github.com/charettetimothy/Friend_Finder">GitHub Repo</a></p>
       </div>
     </footer>
 
@@ -253,8 +253,8 @@
         };
 
         // AJAX post the data to the friends API.
-        $.post("/api/friends", userData, function(data) {
-
+        $.post("/data/friends", userData, function(data) {
+          console.log(userData)
           // Grab the result from the AJAX post so that the best match's name and photo are displayed.
           $("#match-name").text(data.name);
           $("#match-img").attr("src", data.photo);
