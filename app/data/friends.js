@@ -2,7 +2,7 @@
 // Below data will hold all of our users data.
 // Initially we just set it equal to a "dummy" user.
 // But you could have it be an empty array as well.
-var userData = [{
+var potentialMatches = [{
     name: "Ahmed",
     photo: "#",
     id: 22,
@@ -55,4 +55,4 @@ var userData = [{
 ];
 
 // Note how we export the array. This makes it accessible to other files using require.
-module.exports = userData;
+module.exports = potentialMatches;

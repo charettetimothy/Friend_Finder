@@ -154,13 +154,15 @@
     <br>
 
     <!-- Submit Button -->
-    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
-     Submit</button>
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle"
+        aria-hidden="true"></i>
+      Submit</button>
 
     <hr>
     <footer class="footer">
       <div class="container">
-        <p><a href="/data/friends">API Friends List</a> | <a href="https://github.com/charettetimothy/Friend_Finder">GitHub Repo</a></p>
+        <p><a href="/data/friends">API Friends List</a> | <a href="https://github.com/charettetimothy/Friend_Finder">GitHub
+            Repo</a></p>
       </div>
     </footer>
 
@@ -211,19 +213,19 @@
     }
 
     // Capture the form inputs
-    $("#submit").on("click", function(event) {
+    $("#submit").on("click", function (event) {
       event.preventDefault();
 
       // Form validation
       function validateForm() {
         var isValid = true;
-        $(".form-control").each(function() {
+        $(".form-control").each(function () {
           if ($(this).val() === "") {
             isValid = false;
           }
         });
 
-        $(".chosen-select").each(function() {
+        $(".chosen-select").each(function () {
 
           if ($(this).val() === "") {
             isValid = false;
@@ -235,7 +237,7 @@
       // If all required fields are filled
       if (validateForm()) {
         // Create an object for the user"s data
-        var userData = {
+        var theNewGuy = {
           name: $("#name").val(),
           photo: $("#photo").val(),
           scores: [
@@ -251,11 +253,9 @@
             $("#q10").val()
           ]
         };
-                                                          // userdata is theNewGuy
-                                                          // data is everything
         // AJAX post the data to the friends API.
-        $.post("/data/friends", userData, function(data) {
-          console.log(userData)
+        $.post("/data/friends", theNewGuy, function (data) {
+          console.log(theNewGuy)
           console.log(data)
           // Grab the result from the AJAX post so that the best match's name and photo are displayed.
           $("#match-name").text(data.name);
