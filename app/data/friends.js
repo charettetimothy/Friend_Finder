@@ -49,7 +49,7 @@ var potentialMatches = [{
   },
   {
     name: "Jerry",
-    photo: "#",
+    photo: "favicon.png",
     id: 10,
   }
 ];
