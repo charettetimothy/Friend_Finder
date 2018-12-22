@@ -7,25 +7,27 @@ var potentialMatches = require("../data/friends");
 // 
 module.exports = function (app) {
   app.post("/data/friends", function (req, res) {
-    var newScore = 0;
+    var surveyScore = 0;
     //loops through theNewGuy score. req.body is the stuff that got sent to the server from the survey.
     // then turns the string of numbers into an integer and stores in a variable.
     for (var i = 0; i < req.body.scores.length; i++) {
       var number = parseInt(req.body.scores[i])
-      newScore += number
+      surveyScore += number
     }
     // loop through potentialMatches and compares to the new guy.
     var bestMatch = {};
+    var roundedScore = Math.round((surveyScore/5)*5)
     for (var i = 0; i < potentialMatches.length; i++) {
       // make sure we are getting the data we want from potentialMatches...
       // console.log(potentialMatches[i].id)
-      if (potentialMatches[i].id === newScore) {
+      if (potentialMatches[i].id === roundedScore) {
         bestMatch.name = potentialMatches[i].name
         bestMatch.photo = potentialMatches[i].photo
+        // 
       }
     }
     // make sure we are getting the score from theNewGuy
-    console.log(newScore)
+    console.log(roundedScore)
     res.json(bestMatch);
   });
   // API GET Requests

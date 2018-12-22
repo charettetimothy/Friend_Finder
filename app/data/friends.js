@@ -4,53 +4,53 @@
 // But you could have it be an empty array as well.
 var potentialMatches = [{
     name: "Ahmed",
-    photo: "#",
-    id: 22,
+    photo: "favicon.png",
+    id: 10,
   },
   {
     name: "Abid",
-    photo: "#",
+    photo: "favicon.png",
     id: 15,
   },
   {
     name: "Tim",
-    photo: "#",
-    id: 3,
+    photo: "favicon.png",
+    id: 20,
   },
   {
     name: "Jim",
-    photo: "#",
-    id: 4,
+    photo: "favicon.png",
+    id: 25,
   },
   {
     name: "Bob",
-    photo: "#",
-    id: 5,
+    photo: "favicon.png",
+    id: 30,
   },
   {
     name: "Larry",
-    photo: "#",
-    id: 6,
+    photo: "favicon.png",
+    id: 35,
   },
   {
     name: "Mo",
-    photo: "#",
-    id: 7,
+    photo: "favicon.png",
+    id: 40,
   },
   {
     name: "Curley",
-    photo: "#",
-    id: 8,
+    photo: "favicon.png",
+    id: 45,
   },
   {
     name: "Harry",
-    photo: "#",
-    id: 9,
+    photo: "favicon.png",
+    id: 50,
   },
   {
     name: "Jerry",
     photo: "favicon.png",
-    id: 10,
+    id: 55,
   }
 ];
 
