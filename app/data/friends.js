@@ -3,53 +3,53 @@
 // Initially we just set it equal to a "dummy" user.
 // But you could have it be an empty array as well.
 var potentialMatches = [{
-    name: "Ahmed",
-    photo: "favicon.png",
+    name: "Mary",
+    photo: "beauty.jpg",
     id: 10,
   },
   {
     name: "Abid",
-    photo: "favicon.png",
+    photo: "entrepreneur.jpg",
     id: 15,
   },
   {
-    name: "Tim",
-    photo: "favicon.png",
+    name: "Sarah",
+    photo: "fashion.jpg",
     id: 20,
   },
   {
-    name: "Jim",
-    photo: "favicon.png",
+    name: "Lisa",
+    photo: "fashion1.jpg",
     id: 25,
   },
   {
     name: "Bob",
-    photo: "favicon.png",
+    photo: "hat.jpg",
     id: 30,
   },
   {
-    name: "Larry",
-    photo: "favicon.png",
+    name: "Clarissa",
+    photo: "hijab.jpg",
     id: 35,
   },
   {
     name: "Mo",
-    photo: "favicon.png",
+    photo: "man.jpg",
     id: 40,
   },
   {
     name: "Curley",
-    photo: "favicon.png",
+    photo: "man2.jpg",
     id: 45,
   },
   {
-    name: "Harry",
-    photo: "favicon.png",
+    name: "Marissa",
+    photo: "model.jpg",
     id: 50,
   },
   {
     name: "Jerry",
-    photo: "favicon.png",
+    photo: "suit.jpg",
     id: 55,
   }
 ];

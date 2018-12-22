@@ -17,6 +17,8 @@ module.exports = function (app) {
     // loop through potentialMatches and compares to the new guy.
     var bestMatch = {};
     var roundedScore = Math.round((surveyScore/5)*5)
+    // console.log(surveyScore)
+    console.log(roundedScore)
     for (var i = 0; i < potentialMatches.length; i++) {
       // make sure we are getting the data we want from potentialMatches...
       // console.log(potentialMatches[i].id)
@@ -27,7 +29,7 @@ module.exports = function (app) {
       }
     }
     // make sure we are getting the score from theNewGuy
-    console.log(roundedScore)
+    // console.log(roundedScore)
     res.json(bestMatch);
   });
   // API GET Requests
