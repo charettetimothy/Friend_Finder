@@ -16,10 +16,12 @@ module.exports = function (app) {
     }
     // loop through potentialMatches and compares to the new guy.
     var bestMatch = {};
-    var roundedScore = Math.round((surveyScore/5)*5)
-    // console.log(surveyScore)
+    // var roundedScore = Math.floor(Math.round(surveyScore * 5) / 5)
+    var roundedScore = 5 * Math.round(surveyScore/5);
+    console.log(surveyScore)
     console.log(roundedScore)
     for (var i = 0; i < potentialMatches.length; i++) {
+      
       // make sure we are getting the data we want from potentialMatches...
       // console.log(potentialMatches[i].id)
       if (potentialMatches[i].id === roundedScore) {
